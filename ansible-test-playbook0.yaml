@@ -1,7 +1,7 @@
 - name: ansible-test-playbook0
   hosts: localhost
   vars:
-    credential: '{{ lookup("aws", "credential", "credential0") }}'
+    credential: '{{ lookup("awx", "credential", "credential0") }}'
 
   tasks:
   - name: print hello world!!!

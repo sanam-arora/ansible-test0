@@ -1,13 +1,10 @@
 - name: ansible-test-playbook0
   hosts: localhost
-  vars:
-    credential: '{{ lookup("awx", "credential", "credential0") }}'
 
   tasks:
   - name: print hello world!!!
     ansible.builtin.debug:
       msg: "hello World!!!"
-
   - name: print credential
     ansible.builtin.debug:
-      msg: "{{ ansible.password }}"
+      msg: {{ ansible.password }}

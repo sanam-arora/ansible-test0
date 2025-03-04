@@ -7,4 +7,4 @@
       msg: "hello World!!!"
   - name: print credential
     ansible.builtin.debug:
-      msg: {{ ansible.password }}
+      msg: "{{ ansible.password }}"

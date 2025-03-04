@@ -1,7 +1,0 @@
-- name: ansible-test-playbook0
-  hosts: localhost
-
-  tasks:
-  - name: print hello world!!!
-    ansible.builtin.debug:
-      msg: "hello World!!!"

@@ -10,4 +10,4 @@
 
   - name: print credential
     ansible.builtin.debug:
-      msg: "{{ credential }}"
+      msg: "{{ ansible.password }}"

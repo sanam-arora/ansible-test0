@@ -4,4 +4,4 @@
   tasks:
   - name: print credential
     ansible.builtin.debug:
-      msg: "USERNAME: {{ lookup('env', 'USERNAME') }} | PASSWORD: {{ lookup('env', 'PASSWORD') }}"
+      msg: "USERNAME: {{ username_var }} | PASSWORD: {{ password_var }}"
